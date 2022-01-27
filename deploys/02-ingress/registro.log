@@ -1,0 +1,15 @@
+namespace/nginx-ingress created
+serviceaccount/nginx-ingress created
+clusterrole.rbac.authorization.k8s.io/nginx-ingress created
+clusterrolebinding.rbac.authorization.k8s.io/nginx-ingress created
+clusterrole.rbac.authorization.k8s.io/nginx-ingress-app-protect created
+clusterrolebinding.rbac.authorization.k8s.io/nginx-ingress-app-protect created
+secret/default-server-secret created
+configmap/nginx-config created
+ingressclass.networking.k8s.io/nginx created
+customresourcedefinition.apiextensions.k8s.io/virtualservers.k8s.nginx.org created
+customresourcedefinition.apiextensions.k8s.io/virtualserverroutes.k8s.nginx.org created
+customresourcedefinition.apiextensions.k8s.io/transportservers.k8s.nginx.org created
+customresourcedefinition.apiextensions.k8s.io/policies.k8s.nginx.org created
+customresourcedefinition.apiextensions.k8s.io/globalconfigurations.k8s.nginx.org created
+daemonset.apps/nginx-ingress created

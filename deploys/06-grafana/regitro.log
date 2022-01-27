@@ -1,0 +1,3 @@
+persistentvolumeclaim/grafana-pvc created
+deployment.apps/grafana created
+service/grafana created

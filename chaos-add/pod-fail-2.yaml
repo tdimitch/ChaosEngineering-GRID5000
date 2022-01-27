@@ -1,0 +1,14 @@
+kind: PodChaos
+apiVersion: chaos-mesh.org/v1alpha1
+metadata:
+  name: pod-fail-2
+  namespace: feeder
+spec:
+  selector:
+    namespaces:
+      - feeder
+  mode: fixed-percent
+  value: "20"
+  action: pod-failure
+  duration: 10s
+  gracePeriod: 0

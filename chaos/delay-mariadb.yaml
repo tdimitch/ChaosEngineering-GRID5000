@@ -1,0 +1,15 @@
+apiVersion: chaos-mesh.org/v1alpha1
+kind: NetworkChaos
+metadata:
+  name: network-delay-mariadb
+spec:
+  action: delay # the specific chaos action to inject
+  mode: one # the mode to run chaos action; supported modes are one/all/fixed/fixed-percent/random-max-percent
+  selector: # pods where to inject chaos actions
+    namespaces:
+      - feeder
+    labelSelectors:
+      'app': 'mariadb' # the label of the pod for chaos injection
+  delay:
+    latency: '500ms'
+  duration: '60s'

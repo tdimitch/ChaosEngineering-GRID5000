@@ -1,0 +1,6 @@
+namespace/feeder created
+configmap/conf-d created
+service/mariadb created
+service/mariadb-ready created
+service/mysql created
+statefulset.apps/mariadb created
